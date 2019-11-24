@@ -1,3 +1,12 @@
+# Early Failure Detection for maintenance:
+This is a concept that have been developed during the HackaTUM. It aims to detect failures in assessts (particularily resulting from cracks in material).
+In a first step: Through vibration sensors mounted on the asset, a signal is sent to users if the noise in the vibrations of a material exceeds a certain threshold. 
+In a second verification step: Acoustic sensors are used, through which the reflected energy of sound waves is measured, if this exceeds a certain threshold, the probability of a malfunction in the asset is reasonably high. 
+The user then has the option to report this to the technical center of the insurance company, which then sends employees to take further pictures of the asset and analyse it for cracks through image segmentation. Our project uses MaskRCNN to do so. The detection pipeline consists of two verification tools as well: Canny edge detection and Gabor filters which are run on the image to confirm that cracks exist in the positions suggested by the CNN.
+At the end a solution is proposed to overcome the technical issue.
+
+
+
 # Mask R-CNN for Object Detection and Segmentation
 
 This is an implementation of [Mask R-CNN](https://arxiv.org/abs/1703.06870) on Python 3, Keras, and TensorFlow. The model generates bounding boxes and segmentation masks for each instance of an object in the image. It's based on Feature Pyramid Network (FPN) and a ResNet101 backbone.
