@@ -5,6 +5,7 @@ In a second verification step: Acoustic sensors are used, through which the refl
 The user then has the option to report this to the technical center of the insurance company, which then sends employees to take further pictures of the asset and analyse it for cracks through image segmentation. Our project uses MaskRCNN to do so. The detection pipeline consists of two verification tools as well: Canny edge detection and Gabor filters which are run on the image to confirm that cracks exist in the positions suggested by the CNN.
 At the end a solution is proposed to overcome the technical issue.
 
+![Detection Workflow](assets/analyse_Steps1.png)
 
 
 # Mask R-CNN for Object Detection and Segmentation
